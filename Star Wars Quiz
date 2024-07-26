@@ -1,0 +1,55 @@
+questions = [
+    {
+        question: "Who is Darth Vader?",
+        choices: ["Obi-Wan", "Yoda", "Anakin"],
+        correct_answer: "Anakin"
+    },
+    {   question: "Which planet is Luke from?",
+        choices: ["Naboo", "Tatooine","Coruscant"],
+        correct_answer: "Tatooine"
+
+    },
+    {
+        question: "Which movie released first?",
+        choices: ["Phantom Menace", "A New Hope", "Force Awakens"],
+        correct_answer: "A New Hope"
+
+    }
+]
+
+def display_question (question)
+    puts question[:question]
+    question[:choices]. each_with_index do |choice, index|
+    puts "#{index + 1}. #{choice}"
+    end
+end
+
+def get_user_answer
+    print "Enter your answer(1-3):"
+    user_input = gets.chomp
+    return user_input.to_i-1
+end
+
+def quiz_game (questions)
+    score = 0
+    questions.each do |question|
+        display_question (question)
+        user_answer_index = get_user_answer
+
+        #validate users answer
+        correct_answer_index = question [:choices].index(question[:correct_answer])
+        if user_answer_index == correct_answer_index
+            puts "Correct! \n\n"
+            score += 1
+        else
+            puts "Incorrect. The correct answer was #{question[:correct_answer]}.\n\n"
+        end
+    end
+
+    # Display final score
+    puts "Quiz ended. Your score is #{score}/#{questions.length}."
+
+end
+
+# Run the quiz_game
+quiz_game (questions)

@@ -1,0 +1,15 @@
+def roll_a_die (sides)
+  return (rand * 1000).floor % sides + 1
+end
+
+#puts "Here is your die roll!"
+#puts "D6: #{roll_a_die (6)}"
+#puts "D12: #{roll_a_die (12)}"
+#puts "D20: #{roll_a_die (20)}"
+
+combat_dice = [4,6,8,10,12]
+for die in combat_dice
+
+  result = roll_a_die(die)
+  puts "D#{die} - #{result}"
+end
