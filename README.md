@@ -1,7 +1,8 @@
 # Here are my first few programs
 
-##D6 Roller
-##Output
+## D6 Roller
+
+### Output
 
 ```
 D4 - 4
@@ -11,8 +12,9 @@ D10 - 9
 D12 - 5
 ```
 
-#Star Wars Quiz
-##Output
+## Star Wars Quiz
+
+### Output
 
 ```
 Who is Darth Vader?
