@@ -2,6 +2,12 @@
 
 ## D6 Roller
 
+### Usage
+
+```
+ruby D6\ Roller
+```
+
 ### Output
 
 ```
@@ -13,6 +19,12 @@ D12 - 5
 ```
 
 ## Star Wars Quiz
+
+### Usage
+
+```
+ruby Star\ Wars\ Quiz
+```
 
 ### Output
 
